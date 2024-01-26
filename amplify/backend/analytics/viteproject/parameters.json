@@ -1,0 +1,21 @@
+{
+    "appName": "viteproject",
+    "roleName": "pinpointLambdaRole19170dab",
+    "cloudformationPolicyName": "cloudformationPolicy19170dab",
+    "cloudWatchPolicyName": "cloudWatchPolicy19170dab",
+    "pinpointPolicyName": "pinpointPolicy19170dab",
+    "authPolicyName": "pinpoint_amplify_19170dab",
+    "unauthPolicyName": "pinpoint_amplify_19170dab",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

@@ -1,4 +1,10 @@
 {
+  "analytics": {
+    "viteproject": {
+      "providerPlugin": "awscloudformation",
+      "service": "Pinpoint"
+    }
+  },
   "api": {
     "viteproject": {
       "dependsOn": [],
