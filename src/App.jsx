@@ -1,3 +1,5 @@
+import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 import { useEffect, useState } from 'react';
 
 import { generateClient } from 'aws-amplify/api';
@@ -8,7 +10,7 @@ import { listTodos } from './graphql/queries';
 const initialState = { name: '', description: '' };
 const client = generateClient();
 
-const App = () => {
+const App = ({signOut, user}) => {
   const [formState, setFormState] = useState(initialState);
   const [todos, setTodos] = useState([]);
 
@@ -51,6 +53,11 @@ const App = () => {
 
   return (
     <div style={styles.container}>
+    <Heading level={1}>Hello {user.username}</Heading>
+    <Button onClick={signOut} style={styles.button}>
+      Sign out
+    </Button>
+
       <h2>Amplify Todos</h2>
       <input
         onChange={(event) => setInput('name', event.target.value)}
@@ -105,4 +112,4 @@ const styles = {
   }
 };
 
-export default App;
+export default withAuthenticator(App);
