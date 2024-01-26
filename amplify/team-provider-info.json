@@ -20,6 +20,12 @@
       },
       "analytics": {
         "viteproject": {}
+      },
+      "interactions": {
+        "lex05f31ca3": {
+          "deploymentBucketName": "amplify-viteproject-dev-94111-deployment",
+          "s3Key": "amplify-builds/lex05f31ca3-42565765573542414139-build.zip"
+        }
       }
     }
   }

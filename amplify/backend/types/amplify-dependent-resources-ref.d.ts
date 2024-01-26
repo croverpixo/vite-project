@@ -23,5 +23,12 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolId": "string",
       "UserPoolName": "string"
     }
+  },
+  "interactions": {
+    "lex05f31ca3": {
+      "BotName": "string",
+      "FunctionArn": "string",
+      "Region": "string"
+    }
   }
 }

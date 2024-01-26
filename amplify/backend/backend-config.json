@@ -57,5 +57,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lex"
     }
+  },
+  "parameters": {
+    "AMPLIFY_interactions_lex05f31ca3_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "interactions",
+          "resourceName": "lex05f31ca3"
+        }
+      ]
+    },
+    "AMPLIFY_interactions_lex05f31ca3_s3Key": {
+      "usedBy": [
+        {
+          "category": "interactions",
+          "resourceName": "lex05f31ca3"
+        }
+      ]
+    }
   }
 }
