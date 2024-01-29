@@ -18,9 +18,6 @@
       "auth": {
         "viteprojectfc2efb4a": {}
       },
-      "analytics": {
-        "viteproject": {}
-      },
       "interactions": {
         "lex05f31ca3": {
           "deploymentBucketName": "amplify-viteproject-dev-94111-deployment",
